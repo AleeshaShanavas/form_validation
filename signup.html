@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- css coonection -->
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+    <div class="sndblock">
+        <div class="mainblock">
+            <!-- toggle button for signin and signup -->
+            <div class="set1" id="btnn">
+                <div class="butn">
+                    <button id="sigup">Sign Up</button>
+                    <button id="sigin" onclick="window.location.href = 'index.html'">Sign In</button>
+                </div>
+            </div>
+
+            <div class="set2">
+                <div class="main">
+                    <!-- for heading -->
+                    <div class="heading" id="new">
+                        <H2>SIGN UP</H2>
+                    </div>
+
+                    <!-- for result -->
+                    <div class="px">
+                        <p id="text"></p>
+                        <table id="tables">
+                            <tr>
+                                <th>NAME </th>
+                                <td id="rname"></td>
+                            </tr>
+                            <tr>
+                                <th>EMAIL </th>
+                                <td id="remail"></td>
+                            </tr>
+                            <tr>
+                                <th>PHONE NUMBER</th>
+                                <td id="rph"></td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+                    <!-- read section using form tag -->
+                    <div class="fld" id="frm">
+                        <form action="mainpage.html" method="get">
+                            <div>
+                                <input id="name" type="text" placeholder="name" onchange="validname()" required>
+                            </div>
+                            <div>
+                                <input id="email" type="text" placeholder="Email" onchange="validemail()">
+                            </div>
+                            <div>
+                                <input id="ph" type="text" placeholder="phone number" onchange="validph()">
+                            </div>
+                            <div>
+                                <input id="pass1" type="password" placeholder="password" onchange="validpass()">
+                            </div>
+                            <div>
+                                <input id="pass2" type="password" placeholder="conform password"
+                                    onchange="validpassconform()">
+                            </div>
+                            <div class="buton">
+                                <input type="submit" value="signup" id="signup">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!--js connection  -->
+    <script src="../public/js/signup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <!-- css coonection -->
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+    <div class="sndblock">
+
+
+        <div class="mainblock">
+            <!-- toggle button for signin and signup -->
+            <div class="set1" id="btnn">
+                <div class="butn">
+                    <button id="sigup" onclick="window.location.href = 'signup.html'">Sign Up</button>
+                    <button id="sigin">Sign In</button>
+                </div>
+            </div>
+
+            <div class="set2">
+                <div class="main">
+                    <!-- for heading -->
+                    <div class="heading" id="new">
+                        <h2>SIGN IN</h2>
+                    </div>
+
+                    <!-- for result -->
+                    <div class="px">
+                        <p id="text"></p>
+                        <h2 id="hed"></h2>
+                    </div>
+
+                    <!-- read section using form tag -->
+                    <div class="fld" id="frm">
+                        <form action="mainpage.html" method="get">
+                            <div>
+                                <input id="email" type="text" placeholder="Email" required>
+                            </div>
+                            <div >
+                                <input id="pass1" type="password" placeholder="password" onchange="checkpass()">
+                            </div>
+                            <div class="buton">
+                                <input type="submit" value="signin" id="signin">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!--js connection  -->
+    <script src="../public/js/signin.js"></script>
+
+</body>
+
+</html>
